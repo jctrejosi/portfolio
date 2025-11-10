@@ -4,12 +4,12 @@ import {
   IntroductionSectionAndromeda,
   ScrollSnapAndromeda,
   WorkSectionAndromeda,
-} from 'components-seed'
+} from '@jctrejosi/components-seed'
 
+import imageProfile from '@/assets/images/lion-rasta.png'
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
-import imageProfile from '@/assets/images/lion-rasta.png'
 
 const projects = [
   {

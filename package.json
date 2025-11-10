@@ -1,11 +1,12 @@
 {
-  "name": "portfolio",
+  "name": "@jctrejosi/portfolio",
   "version": "0.0.0",
   "type": "module",
+  "author": "Juan Carlos Trejos Iglesias",
   "eslintConfig": {
     "extends": "./eslint.config.js"
   },
-  "prettier": "components-seed/.prettierrc",
+  "prettier": "@jctrejosi/components-seed/.prettierrc",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -15,7 +16,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "components-seed": "0.0.8",
+    "@jctrejosi/components-seed": "1.0.1",
     "glob": "^11.0.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
