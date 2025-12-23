@@ -1,5 +1,4 @@
 import {
-  ContactFormAndromeda,
   HeroSectionAndromeda,
   IntroductionSectionAndromeda,
   ScrollSnapAndromeda,
@@ -18,7 +17,7 @@ import logoRoiback from '@/assets/images/logo-roiback.svg'
 
 // ---- Props hero section ----
 
-import { ProjectsAndromeda } from '@jctrejosi/components-seed'
+import { ContactFormAntlia, ProjectsAndromeda } from '@jctrejosi/components-seed'
 import { translationsHeroSection, translationsIntroduction } from './translations'
 
 // ---- Props introduction section ----
@@ -132,7 +131,7 @@ export const Home = () => {
           backgroundColor: 'var(--bg-secondary)',
         },
         {
-          component: <ContactFormAndromeda sendTo="contact@myportfolio.com" backgroundImage={bgCircuitBoard} />,
+          component: <ContactFormAntlia />,
           dotLabel: '/Contact me',
           dotColor: 'var(--dark-100)',
           backgroundColor: 'var(--bg-secondary)',
