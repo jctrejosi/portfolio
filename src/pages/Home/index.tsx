@@ -15,10 +15,10 @@ import imageProfile from '@/assets/images/imageProfile1.png'
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
-import bgMatrix from '@/assets/images/matrix_bg.png'
 
 // ---- Props hero section ----
 
+import { ProjectsAndromeda } from '@jctrejosi/components-seed'
 import { translationsHeroSection, translationsIntroduction } from './translations'
 
 // ---- Props introduction section ----
@@ -33,32 +33,66 @@ const socialIcons = {
 
 // ---- Props work section ----
 
-const projects = [
+const professionalExperience = [
   {
     name: 'GAIA',
     logo: logoGaia,
+    role: 'desarrollador de software / investigador',
+    description:
+      'desarrollo de aplicaciones y prototipos para proyectos de investigación en ambientes inteligentes y sistemas adaptativos. apoyo en automatización, análisis de datos y desarrollo de soluciones orientadas a investigación académica.',
+    technologies: [
+      'python',
+      'flask',
+      'react',
+      'docker',
+      'linux',
+      'análisis de datos',
+    ],
     link: {
       url: 'https://gaia.manizales.unal.edu.co/grupo_inv/grupo-de-investigacion-en-ambientes-inteligentes-adaptativos-gaia',
-      text: 'Website',
+      text: 'website',
     },
   },
   {
     name: 'Aranda Software',
     logo: logoAranda,
+    role: 'frontend developer',
+    description:
+      'desarrollo y mantenimiento de aplicaciones web empresariales tipo saas. creación de interfaces reutilizables, consumo de apis y trabajo colaborativo bajo arquitecturas escalables.',
+    technologies: [
+      'react',
+      'typescript',
+      'redux',
+      'axios',
+      'css modules',
+      'git',
+    ],
     link: {
       url: 'https://arandasoft.com/en/',
-      text: 'Website',
+      text: 'website',
     },
   },
   {
     name: 'Roiback Latam',
     logo: logoRoiback,
+    role: 'full stack developer',
+    description:
+      'participación en el desarrollo de soluciones web para el sector hotelero. implementación de funcionalidades frontend y backend, optimización de flujos y soporte a plataformas en producción.',
+    technologies: [
+      'javascript',
+      'react',
+      'node.js',
+      'apis rest',
+      'sql',
+      'docker',
+    ],
     link: {
       url: 'https://en.roiback.com/',
-      text: 'Website',
+      text: 'website',
     },
   },
 ]
+
 
 export const Home = () => {
   return (
@@ -75,25 +109,31 @@ export const Home = () => {
         },
         {
           component: <IntroductionSectionAndromeda socialIcons={socialIcons} backgroundImage={bgCircuitBoard} translations={translationsIntroduction} />,
-          dotLabel: 'Hi there',
+          dotLabel: '/Hi there',
           dotColor: 'var(--base-color-6)',
           backgroundColor: 'var(--bg-secondary)',
         },
         {
-          component: <WorkSectionAndromeda items={projects} backgroundImage={bgMatrix}  />,
-          dotLabel: '/Work',
+          component: <WorkSectionAntlia />,
+          dotLabel: '/Expertices',
           dotColor: 'var(--base-color-4)',
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <WorkSectionAntlia />,
+          component: <WorkSectionAndromeda items={professionalExperience}  />,
           dotLabel: '/Professional Experience',
           dotColor: 'var(--base-color-4)',
           backgroundColor: 'var(--bg-primary)',
         },
         {
+          component: <ProjectsAndromeda />,
+          dotLabel: '/Projects',
+          dotColor: 'var(--dark-100)',
+          backgroundColor: 'var(--bg-secondary)',
+        },
+        {
           component: <ContactFormAndromeda sendTo="contact@myportfolio.com" backgroundImage={bgCircuitBoard} />,
-          dotLabel: 'Contact me',
+          dotLabel: '/Contact me',
           dotColor: 'var(--dark-100)',
           backgroundColor: 'var(--bg-secondary)',
         },
