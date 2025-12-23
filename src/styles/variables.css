@@ -11,9 +11,7 @@
   --base-color-10: #505452;
   --base-color-11: #1a1a1a;
   --base-color-12: #13b628;
-}
 
-body.light {
   --anchor-color: var(--base-color-12);
   --anchor-color-hover: var(--base-color-3);
   --link-size: 1.4rem;
@@ -42,6 +40,3 @@ body.light {
   --main-bg: var(--base-color-1);
 }
 
-body.dark {
-  --main-bg: var(--base-color-6);
-}

@@ -1,0 +1,1 @@
+declare module "@jctrejosi/components-seed";
