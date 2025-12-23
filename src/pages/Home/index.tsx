@@ -1,24 +1,29 @@
 import {
-  HeroSectionAndromeda,
+  ContactFormAntlia,
+  HeroSectionAntlia,
   IntroductionSectionAndromeda,
+  ProjectsAndromeda,
   ScrollSnapAndromeda,
   WorkSectionAndromeda,
-  WorkSectionAntlia
+  WorkSectionAntlia,
 } from '@jctrejosi/components-seed'
 
 // ---- Assets ----
 
-import bgWorldMap from '@/assets/images/bg_world_map.svg'
 import bgCircuitBoard from '@/assets/images/circuit_board.svg'
-import imageProfile from '@/assets/images/imageProfile1.png'
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
+import { translationsIntroduction } from './translations'
 
 // ---- Props hero section ----
 
-import { ContactFormAntlia, ProjectsAndromeda } from '@jctrejosi/components-seed'
-import { translationsHeroSection, translationsIntroduction } from './translations'
+const logos = [
+  { image: 'logo1', url: 'https://example.com', alt: 'logo 1' },
+  { image: 'logo2', url: 'https://example.com', alt: 'logo 2' },
+  { image: 'logo3', url: 'https://example.com', alt: 'logo 3' },
+  { image: 'logo1', url: 'https://example.com', alt: 'logo 4' }, // puedes repetir para más items
+]
 
 // ---- Props introduction section ----
 
@@ -92,16 +97,18 @@ const professionalExperience = [
   },
 ]
 
-
 export const Home = () => {
   return (
     <ScrollSnapAndromeda
       sections={[
         {
           component: (
-            <HeroSectionAndromeda imageProfile={imageProfile} backgroundImage={bgWorldMap} backgroundImageRight={bgCircuitBoard} translations={translationsHeroSection} style={{
-              '--subtitle-color': 'var(--base-color-5)',
-            }as React.CSSProperties} />
+            <HeroSectionAntlia
+              mainTitle="TAMAL SEN"
+              subtitle="Software engineer, front end & app developer."
+              items={logos}
+              backgroundImage={'heroBg'}
+            />
           ),
           dotLabel: 'Init',
           dotColor: 'var(--base-color-12)',
