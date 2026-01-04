@@ -10,6 +10,7 @@ import {
 
 // ---- Assets ----
 
+import bgWorlsMap from '@/assets/images/bg_world_map.svg'
 import bgCircuitBoard from '@/assets/images/circuit_board.svg'
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
@@ -104,20 +105,21 @@ export const Home = () => {
         {
           component: (
             <HeroSectionAntlia
-              mainTitle="TAMAL SEN"
+              mainTitle="JUAN TREJOS"
               subtitle="Software engineer, front end & app developer."
               items={logos}
-              backgroundImage={'heroBg'}
+              backgroundImage={bgWorlsMap}
             />
           ),
           dotLabel: 'Init',
           dotColor: 'var(--base-color-12)',
+          backgroundColor: 'var(--bg-primary)',
         },
         {
           component: <IntroductionSectionAndromeda socialIcons={socialIcons} backgroundImage={bgCircuitBoard} translations={translationsIntroduction} />,
           dotLabel: '/Hi there',
           dotColor: 'var(--base-color-6)',
-          backgroundColor: 'var(--bg-secondary)',
+          backgroundColor: 'var(--bg-primary)',
         },
         {
           component: <WorkSectionAntlia />,
@@ -126,22 +128,30 @@ export const Home = () => {
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <WorkSectionAndromeda items={professionalExperience}  />,
+          component: <WorkSectionAndromeda items={professionalExperience} style={
+            {
+              '--item-bg': 'var(--dark-50)',
+              '--text-color': 'var(--dark-100)',
+              '--company-color': 'var(--base-color-1)',
+              '--role-color': 'var(--base-color-7)',
+              '--subtitle-color': 'var(--base-color-3)',
+            }
+          } />,
           dotLabel: '/Professional Experience',
-          dotColor: 'var(--base-color-4)',
+          dotColor: 'var(--base-color-12)',
           backgroundColor: 'var(--bg-primary)',
         },
         {
           component: <ProjectsAndromeda />,
           dotLabel: '/Projects',
-          dotColor: 'var(--dark-100)',
-          backgroundColor: 'var(--bg-secondary)',
+          dotColor: 'var(--base-color-6)',
+          backgroundColor: 'var(--bg-primary)',
         },
         {
           component: <ContactFormAntlia />,
           dotLabel: '/Contact me',
-          dotColor: 'var(--dark-100)',
-          backgroundColor: 'var(--bg-secondary)',
+          dotColor: 'var(--base-color-4)',
+          backgroundColor: 'var(--bg-primary)',
         },
       ]}
     />
