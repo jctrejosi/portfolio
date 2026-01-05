@@ -18,13 +18,41 @@ import logoRoiback from '@/assets/images/logo-roiback.svg'
 import { translationsIntroduction } from './translations'
 
 // ---- Props hero section ----
+import UnalLogo from '@/assets/logos/UN.svg'
+import angular from '@/assets/stack/angular.svg'
+import aws from '@/assets/stack/aws.svg'
+import azure from '@/assets/stack/azure.svg'
+import java from '@/assets/stack/java.svg'
+import ollama from '@/assets/stack/ollama.svg'
+import postgressql from '@/assets/stack/postgressql.svg'
+import python from '@/assets/stack/python.svg'
+import react from '@/assets/stack/react.svg'
+import spring from '@/assets/stack/spring.svg'
+import vue from '@/assets/stack/vue.svg'
 
 const logos = [
-  { image: 'logo1', url: 'https://example.com', alt: 'logo 1' },
-  { image: 'logo2', url: 'https://example.com', alt: 'logo 2' },
-  { image: 'logo3', url: 'https://example.com', alt: 'logo 3' },
-  { image: 'logo1', url: 'https://example.com', alt: 'logo 4' },
+  { image: react, url: 'https://react.dev/', alt: 'react logo', text: 'React' },
+  { image: vue, url: 'https://vuejs.org/', alt: 'vue logo', text: 'Vue' },
+  { image: angular, url: 'https://angular.dev/', alt: 'angular logo', text: 'Angular' },
+  { image: python, url: 'https://www.python.org/dev/', alt: 'python logo', text: 'Python' },
+  { image: java, url: 'https://dev.java/', alt: 'java logo', text: 'Java' },
+  {
+    image: postgressql,
+    url: 'https://www.postgresql.org/developer/',
+    alt: 'postgresql logo',
+    text: 'PostgreSQL',
+  },
+  { image: ollama, url: 'https://docs.ollama.com/', alt: 'ollama logo', text: 'Ollama' },
+  { image: spring, url: 'https://spring.io/', alt: 'spring logo', text: 'Spring' },
+  { image: aws, url: 'https://developer.amazon.com/', alt: 'aws logo', text: 'AWS' },
+  {
+    image: azure,
+    url: 'https://azure.microsoft.com/es-es/products/devops',
+    alt: 'azure logo',
+    text: 'Azure',
+  },
 ]
+
 
 // ---- Props introduction section ----
 
@@ -108,12 +136,13 @@ export const Home = () => {
               mainTitle="JUAN TREJOS"
               subtitle="Software engineer, front end & app developer."
               items={logos}
+              logo={UnalLogo}
               backgroundImage={bgWorlsMap}
               style={
                 {
                   '--bg-container': 'var(--bg-primary)',
                   '--subtitle-color': 'var(--base-color-1)',
-                  '--featured-color': 'var(--base-color-12)',
+                  '--featured-color': 'var(--base-color-5)',
                 }
               }
             />
