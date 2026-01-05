@@ -4,42 +4,6 @@ export const translationsHeroSection = {
     en: '',
     pt: '',
   },
-  title_developer: {
-    es: 'full-stack',
-    en: '',
-    pt: '',
-  },
-  subtitle: {
-    es: 'Me gusta crear productos a la medida que sean accesibles, escalables y fáciles de usar',
-    en: '.',
-    pt: '',
-  },
-  highlight_1: {
-    es: 'Más de 5 años de experiencia desarrollando aplicaciones',
-  },
-  highlight_2: {
-    es: 'Experiencia comprobada en la creación de productos exitosos para clientes en varios países.',
-  },
-  name: {
-    es: 'Juan Carlos Trejos Iglesias',
-    en: 'Juan Carlos Trejos Iglesias',
-    pt: 'Juan Carlos Trejos Iglesias',
-  },
-  address: {
-    es: 'Manizales, Colombia',
-    en: 'Manizales, Colombia',
-    pt: 'Manizales, Colombia',
-  },
-  email: {
-    es: 'jctrejosi@unal.edu.co',
-    en: 'jctrejosi@unal.edu.co',
-    pt: 'jctrejosi@unal.edu.co',
-  },
-  phone: {
-    es: '(+57) 314 885 4358',
-    en: '(+57) 314 885 4358',
-    pt: '(+57) 314 885 4358',
-  },
 }
 
 export const translationsIntroduction = {

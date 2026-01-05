@@ -23,7 +23,7 @@ const logos = [
   { image: 'logo1', url: 'https://example.com', alt: 'logo 1' },
   { image: 'logo2', url: 'https://example.com', alt: 'logo 2' },
   { image: 'logo3', url: 'https://example.com', alt: 'logo 3' },
-  { image: 'logo1', url: 'https://example.com', alt: 'logo 4' }, // puedes repetir para más items
+  { image: 'logo1', url: 'https://example.com', alt: 'logo 4' },
 ]
 
 // ---- Props introduction section ----
@@ -109,20 +109,37 @@ export const Home = () => {
               subtitle="Software engineer, front end & app developer."
               items={logos}
               backgroundImage={bgWorlsMap}
+              style={
+                {
+                  '--bg-container': 'var(--bg-primary)',
+                  '--subtitle-color': 'var(--base-color-1)',
+                  '--featured-color': 'var(--base-color-12)',
+                }
+              }
             />
           ),
           dotLabel: 'Init',
-          dotColor: 'var(--base-color-12)',
+          dotColor: 'var(--base-color-5)',
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <IntroductionSectionAndromeda socialIcons={socialIcons} backgroundImage={bgCircuitBoard} translations={translationsIntroduction} />,
+          component: <IntroductionSectionAndromeda socialIcons={socialIcons} backgroundImage={bgCircuitBoard} translations={translationsIntroduction} style={{
+            '--icon-color': 'var(--base-color-6)',
+            '--icon-color-hover': 'var(--base-color-5)',
+          }} />,
           dotLabel: '/Hi there',
           dotColor: 'var(--base-color-6)',
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <WorkSectionAntlia />,
+          component: <WorkSectionAntlia style={
+            {
+              '--item-bg': 'var(--base-color-10)',
+              '--item-border-color': 'var(--base-color-4)',
+              '--icon-color': 'var(--base-color-4)',
+              '--subtitle-color': 'var(--base-color-4)',
+            }
+          } />,
           dotLabel: '/Expertices',
           dotColor: 'var(--base-color-4)',
           backgroundColor: 'var(--bg-primary)',
@@ -130,15 +147,18 @@ export const Home = () => {
         {
           component: <WorkSectionAndromeda items={professionalExperience} style={
             {
-              '--item-bg': 'var(--dark-50)',
+              '--item-bg': 'var(--base-color-10)',
+              '--item-border-color': 'var(--base-color-5)',
               '--text-color': 'var(--dark-100)',
               '--company-color': 'var(--base-color-1)',
-              '--role-color': 'var(--base-color-7)',
+              '--role-color': 'var(--base-color-5)',
               '--subtitle-color': 'var(--base-color-3)',
+              '--link-color': 'var(--base-color-5)',
+              '--link-color-hover': 'var(--base-color-7)',
             }
           } />,
           dotLabel: '/Professional Experience',
-          dotColor: 'var(--base-color-12)',
+          dotColor: 'var(--base-color-5)',
           backgroundColor: 'var(--bg-primary)',
         },
         {
@@ -148,7 +168,12 @@ export const Home = () => {
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <ContactFormAntlia />,
+          component: <ContactFormAntlia style={{
+            '--accent-color': 'var(--base-color-4)',
+            '--subtitle-color': 'var(--base-color-4)',
+            '--submit-bg': 'var(--base-color-4-1)',
+            '--submit-color': 'var(--dark-0)',
+          }} />,
           dotLabel: '/Contact me',
           dotColor: 'var(--base-color-4)',
           backgroundColor: 'var(--bg-primary)',
