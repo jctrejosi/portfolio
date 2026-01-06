@@ -14,7 +14,15 @@ import {
 import bgWorlsMap from '@/assets/images/bg_world_map.svg'
 import bgCircuitBoard from '@/assets/images/circuit_board.svg'
 import UnalLogo from '@/assets/logos/UN.svg'
-import { introductionSocialIcons, logosHeroSection, professionalExperience, translationsHeroSection, translationsIntroduction } from './sources'
+import {
+  introductionSocialIcons,
+  ItemsWorkAntlia,
+  logosHeroSection,
+  professionalExperience,
+  translationsHeroSection,
+  translationsIntroduction,
+  translationsWorkAntlia
+} from './sources'
 
 export const Home = () => {
   return (
@@ -56,7 +64,10 @@ export const Home = () => {
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <WorkSectionAntlia style={
+          component: <WorkSectionAntlia
+            items={ItemsWorkAntlia}
+            translations={translationsWorkAntlia}
+            style={
             {
               '--item-bg': 'var(--base-color-10)',
               '--item-border-color': 'var(--base-color-4)',

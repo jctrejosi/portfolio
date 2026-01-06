@@ -90,6 +90,45 @@ export const introductionSocialIcons = {
 }
 
 /* ------------------------------------
+---------WORK SECTION ANTLIA ----------
+------------ EXPERTICIE ---------------
+--------------------------------------*/
+import { BsGlobe2 } from 'react-icons/bs'
+import { FaCode, FaMobileAlt } from 'react-icons/fa'
+
+export const translationsWorkAntlia = {
+  title: {
+    es: '/Experticie',
+  },
+  subtitle: {
+    es: 'Áreas en las que me especializo',
+  },
+}
+
+export const ItemsWorkAntlia = [
+  {
+    icon: FaCode,
+    title: 'Software personalizado',
+    subtitle: 'Java · Python · C++',
+    description: 'Desarrollo de soluciones de software personalizadas, escalables y mantenibles, integradas a los procesos y sistemas de la organización.',
+  },
+  {
+    icon: BsGlobe2,
+    title: 'Desarrollo web',
+    subtitle: 'React · Angular · Vue',
+    description: 'Diseño y desarrollo de aplicaciones web modernas, enfocadas en usabilidad, rendimiento y escalabilidad, adaptadas a las necesidades del negocio.',
+  },
+  {
+    icon: FaMobileAlt,
+    title: 'Desarrollo móvil',
+    subtitle: 'Flutter · ReactNative · Android · iOS',
+    description: 'Aplicaciones móviles para clientes o uso interno, pensadas para extender y complementar los procesos del negocio.',
+  },
+]
+
+
+
+/* ------------------------------------
 ------- WORK SECTION ANDROMEDA --------
 --------------------------------------*/
 import logoAranda from '@/assets/images/logo-aranda.webp'
