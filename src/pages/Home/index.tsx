@@ -16,11 +16,13 @@ import bgCircuitBoard from '@/assets/images/circuit_board.svg'
 import UnalLogo from '@/assets/logos/UN.svg'
 import {
   introductionSocialIcons,
+  itemsSkillsAndromeda,
   ItemsWorkAntlia,
   ItemsWorkSectionAndromeda,
   logosHeroSection,
   translationsHeroSection,
   translationsIntroduction,
+  translationsSkillsAndromeda,
   translationsWorkAntlia,
   translationsWorkSectionAndromeda
 } from './sources'
@@ -87,12 +89,12 @@ export const Home = () => {
             style={
             {
               '--item-bg': 'var(--base-color-10)',
-              '--item-border-color': 'var(--base-color-5)',
+              '--item-border-color': 'var(--base-color-3)',
               '--text-color': 'var(--base-color-1)',
               '--company-color': 'var(--base-color-1)',
-              '--role-color': 'var(--base-color-5)',
+              '--role-color': 'var(--base-color-3)',
               '--subtitle-color': 'var(--base-color-3)',
-              '--link-color': 'var(--base-color-5)',
+              '--link-color': 'var(--base-color-3)',
               '--link-color-hover': 'var(--base-color-7)',
             }
           } />,
@@ -101,21 +103,32 @@ export const Home = () => {
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <ProjectsAndromeda />,
+          component: <ProjectsAndromeda style={{
+            '--bg-container': 'var(--bg-primary)',
+            '--title-color': 'var(--base-color-1)',
+            '--subtitle-color': 'var(--base-color-6)',
+            '--link-color': 'var(--text-color)',
+            '--link-color-hover': 'var(--base-color-6)',
+          }} />,
           dotLabel: '/Proyectos',
           dotColor: 'var(--base-color-6)',
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <SkillsAndromeda style={{
-            '--bg-item': 'var(--dark-70)',
-            '--icon-color': 'var(--base-color-6)',
-            '--title-color': 'var(--base-color-1)',
-            '--label-color': 'var(--base-color-4)',
-            '--value-color': 'var(--base-color-4)',
-            '--bg-bar': 'var(--base-color-8)',
-            '--gradient-start': 'var(--base-color-4-1)',
-            '--gradient-end': 'var(--base-color-4)',
+          component: <SkillsAndromeda
+            translations={translationsSkillsAndromeda}
+            items={itemsSkillsAndromeda}
+            style={{
+              '--bg-item': 'var(--dark-70)',
+              '--subtitle-color': 'var(--base-color-4)',
+              '--icon-color': 'var(--base-color-4)',
+              '--icon-size': '2rem',
+              '--title-color': 'var(--base-color-1)',
+              '--label-color': 'var(--base-color-4)',
+              '--value-color': 'var(--base-color-4)',
+              '--bar-bg': 'var(--dark-80)',
+              '--gradient-start': 'var(--base-color-4-1)',
+              '--gradient-end': 'var(--base-color-4)',
           }} />,
           dotLabel: '/Habilidades',
           dotColor: 'var(--base-color-4)',

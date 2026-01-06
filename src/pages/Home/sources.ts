@@ -21,7 +21,7 @@ export const translationsHeroSection = {
     en: 'JUAN TREJOS',
   },
   subtitle: {
-    es: 'INGENIERO DE SOFTWARE, FRONTEND Y DESARROLLADOR DE APLICACIONES.',
+    es: 'ADMINISTRADOR DE SISTEMAS, DESARROLLADOR DE SOFTWARE Y APPS',
     en: 'SOFTWARE INGENIER, FRONTEND AND APP DEVELOPER.',
   },
   featuredTitle: {
@@ -94,7 +94,7 @@ export const introductionSocialIcons = {
 ------------ EXPERTICIE ---------------
 --------------------------------------*/
 import { BsGlobe2 } from 'react-icons/bs'
-import { FaCode, FaMobileAlt } from 'react-icons/fa'
+import { FaCode, FaDatabase, FaDocker, FaMobileAlt, FaServer, FaTools } from 'react-icons/fa'
 
 export const translationsWorkAntlia = {
   title: {
@@ -132,6 +132,7 @@ export const ItemsWorkAntlia = [
 ------- WORK SECTION ANDROMEDA --------
 ------- EXPERIENCIA PROFESIONAL -------
 --------------------------------------*/
+
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
@@ -141,7 +142,7 @@ export const translationsWorkSectionAndromeda = {
     es: '/Experiencia professional',
   },
   subtitle: {
-    es: 'Lugares donde he trabajado y aprendido.',
+    es: 'Lugares donde he trabajado y aprendido',
   },
 }
 
@@ -209,4 +210,90 @@ export const ItemsWorkSectionAndromeda = [
     },
   },
 ]
+
+/* ------------------------------------
+----------- HABILIDADES ---------------
+--------------------------------------*/
+export const translationsSkillsAndromeda = {
+  title: {
+    es: 'Habilidades',
+  },
+  subtitle: {
+    es: 'Mis herramientas como desarrollador',
+  },
+}
+
+export const itemsSkillsAndromeda = [
+  {
+    title: 'Frontend',
+    items: [
+      { label: 'React', value: 90 },
+      { label: 'Vue', value: 80 },
+      { label: 'Angular', value: 70 },
+      { label: 'JavaScript', value: 85 },
+      { label: 'HTML5', value: 95 },
+      { label: 'CSS', value: 90 },
+      { label: 'TypeScript', value: 85 },
+      { label: 'Tailwind', value: 80 },
+      { label: 'CSS-Modules', value: 90 },
+      { label: 'Styled-Components', value: 90 },
+      { label: 'Sass', value: 90 },
+      { label: 'Jest', value: 80 },
+    ],
+    icons: FaCode,
+  },
+  {
+    title: 'Backend',
+    items: [
+      { label: 'Python', value: 85 },
+      { label: 'Node.js', value: 80 },
+      { label: 'Java', value: 75 },
+      { label: 'Express', value: 70 },
+      { label: 'Django', value: 80 },
+      { label: 'Flask', value: 80 },
+      { label: 'Spring Boot', value: 60 },
+      { label: 'Spring Boot Test', value: 60 },
+      { label: 'Swagger', value: 85 },
+      { label: 'Pytest', value: 85 },
+      { label: 'REST APIs', value: 90 },
+    ],
+    icons: FaServer,
+  },
+  {
+    title: 'Bases de datos',
+    items: [
+      { label: 'PostgreSQL', value: 90 },
+      { label: 'MySQL', value: 75 },
+      { label: 'MongoDB', value: 75 },
+    ],
+    icons: FaDatabase,
+  },
+  {
+    title: 'Devops',
+    items: [
+      { label: 'Docker', value: 80 },
+      { label: 'Linux', value: 85 },
+      { label: 'CI/CD', value: 70 },
+      { label: 'AWS', value: 75 },
+      { label: 'Azure', value: 70 },
+    ],
+    icons: FaDocker,
+  },
+  {
+    title: 'Otras herramientas',
+    items: [
+      { label: 'Git', value: 90 },
+      { label: 'Figma', value: 80 },
+      { label: 'SonarQube', value: 80 },
+      { label: 'Cypress', value: 70 },
+      { label: 'scrum', value: 95 },
+      { label: 'Notion', value: 70 },
+      { label: 'Jira', value: 90 },
+      { label: 'Postman', value: 90 },
+    ],
+    icons: FaTools,
+  },
+]
+
+
 
