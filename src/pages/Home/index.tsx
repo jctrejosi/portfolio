@@ -17,11 +17,12 @@ import UnalLogo from '@/assets/logos/UN.svg'
 import {
   introductionSocialIcons,
   ItemsWorkAntlia,
+  ItemsWorkSectionAndromeda,
   logosHeroSection,
-  professionalExperience,
   translationsHeroSection,
   translationsIntroduction,
-  translationsWorkAntlia
+  translationsWorkAntlia,
+  translationsWorkSectionAndromeda
 } from './sources'
 
 export const Home = () => {
@@ -80,11 +81,14 @@ export const Home = () => {
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <WorkSectionAndromeda items={professionalExperience} style={
+          component: <WorkSectionAndromeda
+            translations={translationsWorkSectionAndromeda}
+            items={ItemsWorkSectionAndromeda}
+            style={
             {
               '--item-bg': 'var(--base-color-10)',
               '--item-border-color': 'var(--base-color-5)',
-              '--text-color': 'var(--dark-100)',
+              '--text-color': 'var(--base-color-1)',
               '--company-color': 'var(--base-color-1)',
               '--role-color': 'var(--base-color-5)',
               '--subtitle-color': 'var(--base-color-3)',

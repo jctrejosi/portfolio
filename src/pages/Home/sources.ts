@@ -130,24 +130,36 @@ export const ItemsWorkAntlia = [
 
 /* ------------------------------------
 ------- WORK SECTION ANDROMEDA --------
+------- EXPERIENCIA PROFESIONAL -------
 --------------------------------------*/
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
 
-export const professionalExperience = [
+export const translationsWorkSectionAndromeda = {
+  title: {
+    es: '/Experiencia professional',
+  },
+  subtitle: {
+    es: 'Lugares donde he trabajado y aprendido.',
+  },
+}
+
+export const ItemsWorkSectionAndromeda = [
   {
     name: 'GAIA',
     logo: logoGaia,
-    role: 'desarrollador de software / investigador',
+    role: 'Desarrollador / Investigador',
     description:
-      'desarrollo de aplicaciones y prototipos para proyectos de investigación en ambientes inteligentes y sistemas adaptativos. apoyo en automatización, análisis de datos y desarrollo de soluciones orientadas a investigación académica.',
-    technologies: [
-      'python',
-      'flask',
+      'Desarrollo web desde cero, diseño de software, configuración de servidores y mantenimiento de aplicaciones modernas usando metodologías ágiles y buenas prácticas.',
+      technologies: [
+      'php',
+      'laravel',
+      'vue',
       'react',
       'docker',
       'linux',
+      'sql',
       'análisis de datos',
     ],
     link: {
@@ -158,15 +170,15 @@ export const professionalExperience = [
   {
     name: 'Aranda Software',
     logo: logoAranda,
-    role: 'frontend developer',
+    role: 'Frontend developer',
     description:
-      'desarrollo y mantenimiento de aplicaciones web empresariales tipo saas. creación de interfaces reutilizables, consumo de apis y trabajo colaborativo bajo arquitecturas escalables.',
+      'Fortalecí mi conocimiento en arquitectura de software y devops, desarrollando frontend en React, creando componentes reutilizables y trabajando bajo Scrum con despliegues en Azure.',
     technologies: [
       'react',
+      'devops',
+      'azure',
       'typescript',
-      'redux',
-      'axios',
-      'css modules',
+      'styled-components',
       'git',
     ],
     link: {
@@ -177,16 +189,19 @@ export const professionalExperience = [
   {
     name: 'Roiback Latam',
     logo: logoRoiback,
-    role: 'full stack developer',
+    role: 'Frontend developer',
     description:
-      'participación en el desarrollo de soluciones web para el sector hotelero. implementación de funcionalidades frontend y backend, optimización de flujos y soporte a plataformas en producción.',
+      'Desarrollo frontend para sitios corporativos, creación de componentes reutilizables, mantenimiento, atención de bugs y adaptación continua a requerimientos y retroalimentación del cliente.',
     technologies: [
-      'javascript',
-      'react',
-      'node.js',
-      'apis rest',
-      'sql',
+      'vue',
+      'python',
+      'django',
       'docker',
+      'ios',
+      'git',
+      'sass',
+      'javascript',
+      'google-analitycs',
     ],
     link: {
       url: 'https://en.roiback.com/',
