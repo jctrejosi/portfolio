@@ -4,6 +4,7 @@ import {
   IntroductionSectionAndromeda,
   ProjectsAndromeda,
   ScrollSnapAndromeda,
+  SkillsAndromeda,
   WorkSectionAndromeda,
   WorkSectionAntlia,
 } from '@jctrejosi/components-seed'
@@ -197,14 +198,29 @@ export const Home = () => {
           backgroundColor: 'var(--bg-primary)',
         },
         {
+          component: <SkillsAndromeda style={{
+            '--bg-item': 'var(--dark-70)',
+            '--icon-color': 'var(--base-color-6)',
+            '--title-color': 'var(--base-color-1)',
+            '--label-color': 'var(--base-color-4)',
+            '--value-color': 'var(--base-color-4)',
+            '--bg-bar': 'var(--base-color-8)',
+            '--gradient-start': 'var(--base-color-4-1)',
+            '--gradient-end': 'var(--base-color-4)',
+          }} />,
+          dotLabel: '/Skills',
+          dotColor: 'var(--base-color-4)',
+          backgroundColor: 'var(--bg-primary)',
+        },
+        {
           component: <ContactFormAntlia style={{
-            '--accent-color': 'var(--base-color-4)',
-            '--subtitle-color': 'var(--base-color-4)',
-            '--submit-bg': 'var(--base-color-4-1)',
-            '--submit-color': 'var(--dark-0)',
+            '--accent-color': 'var(--base-color-3)',
+            '--subtitle-color': 'var(--base-color-3)',
+            '--submit-bg': 'var(--base-color-5)',
+            '--submit-color': 'var(--bg-primary)',
           }} />,
           dotLabel: '/Contact me',
-          dotColor: 'var(--base-color-4)',
+          dotColor: 'var(--base-color-5)',
           backgroundColor: 'var(--bg-primary)',
         },
       ]}
