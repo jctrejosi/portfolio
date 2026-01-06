@@ -60,31 +60,24 @@ export const logosHeroSection = [
 export const translationsIntroduction = {
   hi_there: {
     es: '¡Hola!',
-    en: 'Hi there!',
-    pt: 'Olá!',
   },
   i_am: {
-    es: 'Soy ',
-    en: "I'm ",
-    pt: 'Sou ',
+    es: 'Mi nombre es ',
   },
-  name: 'Juan Trejos',
+  name: 'Juan Carlos Trejos Iglesias',
   developer_focus: {
-    es: ', mi especialidad es desarrollar frontend, crear apis y desplegar aplicaciones; me gusta crear sistemas empresariales y también herramientas de software, creo que es el amor al arte de cada científico, y este es mi amor al arte, el desarrollo de software. Disfruto crear soluciones que realmente ayuden a las personas a resolver problemas concretos haciendo software a la medida y entendiendo que cada negocio es único en lo que hace, y cada herramienta debe adaptarse a la forma real en que trabaja el cliente.'
-      + '\n Pero más allá de este script ajustado con IA, me gustaría encontrar mi verdadera pasión, y como dice mi abuela "dedicar cuerpo y alma" a construir algo que sea útil para alguien y también para mí mismo, quiero alimentar mi propósito como desarrollador, porque es esto a lo que dedico mi vida',
-    en: 'a developer focused on building clean, scalable web apps',
-    pt: 'um desenvolvedor focado em criar aplicações web limpas e escaláveis',
+    es: ', diseño y desarrollo software a la medida. Si quieres analizar los datos de tu empresa y visualizarlos en dashboards que te ayuden a tomar mejores decisiones, te explico las estadísticas de tu negocio y hacemos una interfaz; si tienes un local y quieres vender tu mercancía en línea, hacemos tu tienda virtual; si quieres un sitio para mostrar tu trabajo profesional, lo creamos juntos; si quieres agendar citas para tu consultorio, lo programamos.'
+      + '\n\nBásicamente "tú lo imaginas; yo lo hago real".'
+      + '\n\nPero más allá de este script ajustado con IA, me gustan las matemáticas, la estadística y sobre todo el arte; me gusta capturar la esencia de las ideas y crear una solución tecnológica que se adapte a tus necesidades y sea útil, si no lo usas no sirve...',
   },
   enjoy_simplifying: {
     es: 'Disfruto simplificar desafíos técnicos y hacer que la tecnología sea accesible para todos',
   },
   slogan: {
-    es: '\n"Este sitio será mi jardín digital, donde plante una semilla de mi alma."',
+    es: '\n"Este sitio será mi jardín digital".',
   },
   find_me_on: {
     es: 'Encuéntrame en',
-    en: 'Find me on',
-    pt: 'Encontre-me em',
   },
 }
 
