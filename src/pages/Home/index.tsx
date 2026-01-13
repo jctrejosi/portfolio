@@ -20,8 +20,10 @@ import {
   ItemsWorkAntlia,
   ItemsWorkSectionAndromeda,
   logosHeroSection,
+  projects,
   translationsHeroSection,
   translationsIntroduction,
+  translationsProjects,
   translationsSkillsAndromeda,
   translationsWorkAntlia,
   translationsWorkSectionAndromeda
@@ -103,7 +105,10 @@ export const Home = () => {
           backgroundColor: 'var(--bg-primary)',
         },
         {
-          component: <ProjectsAndromeda style={{
+          component: <ProjectsAndromeda
+            translations={translationsProjects}
+            items={projects}
+            style={{
             '--bg-container': 'var(--bg-primary)',
             '--title-color': 'var(--base-color-1)',
             '--subtitle-color': 'var(--base-color-6)',

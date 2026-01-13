@@ -212,6 +212,109 @@ export const ItemsWorkSectionAndromeda = [
 ]
 
 /* ------------------------------------
+------- PROYECTOS DESTACADOS ----------
+--------------------------------------*/
+import asec from '@/assets/images/projects/asec.png'
+import bh_hotels from '@/assets/images/projects/bh_hoteles.png'
+import bq_hotels from '@/assets/images/projects/bq_hoteles.png'
+import coins from '@/assets/images/projects/coins.png'
+import geoportal from '@/assets/images/projects/geoportal-simac.png'
+import ilunion_hotels from '@/assets/images/projects/ilunion_hotels.png'
+import linear_regression from '@/assets/images/projects/linear_regression.png'
+import pert_solver from '@/assets/images/projects/pert_solver.png'
+import tafer_hotels from '@/assets/images/projects/tafer_hotels.png'
+
+export const projects = [
+  {
+    name: 'Aranda Security Compliance (ASEC)',
+    type: 'Plataforma b2b',
+    image: asec,
+    url: 'https://arandasoft.com/productos/aranda-security-compliance/',
+    description:
+      'Plataforma empresarial para gestión de cumplimiento en seguridad de la información, auditorías, riesgos y controles en los dispositivos de TI',
+  },
+  {
+    name: 'Linear regression',
+    type: 'Herramienta de regresión automatizada',
+    image: linear_regression,
+    url: 'https://jcti.xyz/lineal_reg',
+    description:
+      'Aplicación web + agente IA, para análisis estadístico que permite cargar archivos y ejecutar una regresión lineal múltiple con interpretación automática de resultados',
+  },
+  {
+    name: 'Geoportal SIMAC',
+    type: 'Plataforma de monitoreo ambiental',
+    image: geoportal,
+    url: 'https://cdiac.manizales.unal.edu.co/geoportal-simac/',
+    description:
+      'Mapa interactivo para visualización y consulta de datos climatológicos en tiempo real desde estaciones meteorológicas ubicadas en Caldas, Colombia',
+  },
+  {
+    name: 'PERT-Solver',
+    type: 'Herramienta para planificar tiempos',
+    image: pert_solver,
+    url: 'https://jcti.xyz/pert',
+    description:
+      'Aplicación web + agente IA, para análisis estadístico que permite ingresar actividades y ejecutar un análisis para optimizar',
+  },
+  {
+    name: 'jcti-coins',
+    type: 'Plataforma de pronóstico de monedas',
+    image: coins,
+    url: 'https://jcti.xyz/coins',
+    description:
+      'Plataforma web para análisis y predicción de precios de monedas mediante modelos estadísticos',
+  },
+  {
+    name: 'BQ hotels',
+    type: 'Plataforma de reservas',
+    image: bq_hotels,
+    url: 'https://www.bqhoteles.com/es/',
+    description:
+      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+  },
+  {
+    name: 'Ilunion hotels',
+    type: 'Plataforma de reservas',
+    image: ilunion_hotels,
+    url: 'https://www.ilunionhotels.com/',
+    description:
+      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+  },
+  {
+    name: 'Tafer hotels',
+    type: 'Plataforma de reservas',
+    image: tafer_hotels,
+    url: 'https://www.taferresorts.com.mx/',
+    description:
+      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+  },
+  {
+    name: 'BH hotels',
+    type: 'Plataforma de reservas',
+    image: bh_hotels,
+    url: 'https://www.bhhoteles.com/',
+    description:
+      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+  },
+]
+
+export const translationsProjects = {
+  title: {
+    es: '/Proyectos destacados',
+    en: '/Featured projects',
+  },
+  subtitle: {
+    es: 'Ideas convertidas en software',
+    en: 'Ideas converted into software',
+  },
+  show: {
+    es: 'ver proyecto',
+    en: 'show project',
+  },
+}
+
+/* ------------------------------------
 ----------- HABILIDADES ---------------
 --------------------------------------*/
 export const translationsSkillsAndromeda = {
