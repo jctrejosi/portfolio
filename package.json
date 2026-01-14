@@ -16,7 +16,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@jctrejosi/components-seed": "file:../components-seed/bundle",
+    "@jctrejosi/components-seed": "1.0.2",
     "glob": "^11.0.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
