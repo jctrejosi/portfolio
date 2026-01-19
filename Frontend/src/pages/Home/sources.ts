@@ -215,7 +215,7 @@ export const ItemsWorkSectionAndromeda = [
 ------- PROYECTOS DESTACADOS ----------
 --------------------------------------*/
 import asec from '@/assets/images/projects/asec.png'
-import bh_hotels from '@/assets/images/projects/bh_hoteles.png'
+import bh_hotels from '@/assets/images/projects/bh.png'
 import bq_hotels from '@/assets/images/projects/bq_hoteles.png'
 import coins from '@/assets/images/projects/coins.png'
 import geoportal from '@/assets/images/projects/geoportal-simac.png'
