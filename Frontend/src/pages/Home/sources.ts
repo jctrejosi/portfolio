@@ -216,13 +216,13 @@ export const ItemsWorkSectionAndromeda = [
 --------------------------------------*/
 import asec from '@/assets/images/projects/asec.png'
 import bh_hotels from '@/assets/images/projects/bh.png'
-import bq_hotels from '@/assets/images/projects/bq_hoteles.png'
+import bq_hotels from '@/assets/images/projects/bq.png'
 import coins from '@/assets/images/projects/coins.png'
 import geoportal from '@/assets/images/projects/geoportal-simac.png'
-import ilunion_hotels from '@/assets/images/projects/ilunion_hotels.png'
+import ilunion_hotels from '@/assets/images/projects/ilunion.png'
 import linear_regression from '@/assets/images/projects/linear_regression.png'
 import pert_solver from '@/assets/images/projects/pert_solver.png'
-import tafer_hotels from '@/assets/images/projects/tafer_hotels.png'
+import tafer_hotels from '@/assets/images/projects/tafer.png'
 
 export const projects = [
   {
