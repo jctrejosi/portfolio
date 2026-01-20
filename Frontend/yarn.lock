@@ -374,10 +374,10 @@
   dependencies:
     "@isaacs/balanced-match" "^4.0.1"
 
-"@jctrejosi/components-seed@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@jctrejosi/components-seed/-/components-seed-1.0.3.tgz#2f1357196eeae52fcd8a1035fd2c63587e73d227"
-  integrity sha512-yN+Yoyj5a05DDBPqWhM97l3E+OULAsPJoFCaQ/hAFkl+/NRvm1DDL+GZaGs20233PBLmIoz6n6t8rVRxYQ6tmA==
+"@jctrejosi/components-seed@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@jctrejosi/components-seed/-/components-seed-1.0.4.tgz#e99a4be08ee2ff3439aa03e3a57b831676782100"
+  integrity sha512-adWcmT9ZbpxoZeDz35NdiJCUlbaHWBCr2e3eLE7Wpf7zcdzwvi93yCIig80+GvNAh6DIKlqOt1Tv7RnT4svg6g==
   dependencies:
     glob "13.0.0"
     path "0.12.7"

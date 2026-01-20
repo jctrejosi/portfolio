@@ -22,11 +22,9 @@ export const translationsHeroSection = {
   },
   subtitle: {
     es: 'ADMINISTRADOR DE SISTEMAS, DESARROLLADOR DE SOFTWARE Y APPS',
-    en: 'SOFTWARE INGENIER, FRONTEND AND APP DEVELOPER.',
   },
   featuredTitle: {
     es: 'TECNOLOGÍAS QUE USO',
-    en: 'TECH STACK',
   },
 }
 
@@ -157,7 +155,7 @@ import logoRoiback from '@/assets/images/logo-roiback.svg'
 
 export const translationsWorkSectionAndromeda = {
   title: {
-    es: '/Experiencia professional',
+    es: '/Experiencia profesional',
   },
   subtitle: {
     es: 'Lugares donde he trabajado y aprendido',
@@ -320,15 +318,12 @@ export const projects = [
 export const translationsProjects = {
   title: {
     es: '/Proyectos destacados',
-    en: '/Featured projects',
   },
   subtitle: {
     es: 'Ideas convertidas en software',
-    en: 'Ideas converted into software',
   },
   show: {
     es: 'ver proyecto',
-    en: 'show project',
   },
 }
 
@@ -416,5 +411,46 @@ export const itemsSkillsAndromeda = [
   },
 ]
 
+/* ------------------------------------
+----------- CONTACTO ------------------
+--------------------------------------*/
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaWhatsapp,
+} from 'react-icons/fa'
 
+export const contactItemsExample = [
+  {
+    key: 'phone',
+    type: 'phone' as const,
+    title: 'Teléfono',
+    subtitle: '+57 314 885 4358',
+    actionText: 'Llamar →',
+    url: 'tel:+573148854358',
+    icon: <FaPhoneAlt />,
+    targetBlank: false,
+  },
+  {
+    key: 'email',
+    type: 'email' as const,
+    title: 'Email',
+    subtitle: 'jctrejosi@unal.edu.co',
+    actionText: 'Escribir →',
+    url: 'mailto:jctrejosi@unal.edu.com',
+    icon: <FaEnvelope />,
+    targetBlank: false,
+  },
+  {
+    key: 'whatsapp',
+    type: 'whatsapp' as const,
+    title: 'WhatsApp',
+    subtitle: '+57 314 885 4358',
+    actionText: 'Escribir →',
+    // formato estándar para wa.me: https://wa.me/<number>?text=<mensaje>
+    url: 'https://wa.me/3148854358?text=Hola%2C%20quiero%20hablar%20de%20un%20proyecto',
+    icon: <FaWhatsapp />,
+    targetBlank: true,
+  },
+]
 

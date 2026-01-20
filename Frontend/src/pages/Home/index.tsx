@@ -150,7 +150,9 @@ export const Home = () => {
             backgroundColor: 'var(--bg-primary)',
           },
           {
-            component: <ContactFormAntlia style={{
+            component: <ContactFormAntlia
+              idForm={import.meta.env.VITE_ID_CONTACT}
+              style={{
               '--accent-color': 'var(--base-color-3)',
               '--subtitle-color': 'var(--base-color-3)',
               '--submit-bg': 'var(--base-color-5)',
