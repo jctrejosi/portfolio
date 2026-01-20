@@ -273,6 +273,7 @@ export const projects = [
     description:
       'Aplicación web + agente IA, para análisis estadístico que permite ingresar actividades y ejecutar un análisis para optimizar',
   },
+  /*
   {
     name: 'jcti-coins',
     type: 'Plataforma de pronóstico de monedas',
@@ -281,6 +282,7 @@ export const projects = [
     description:
       'Plataforma web para análisis y predicción de precios de monedas mediante modelos estadísticos',
   },
+  */
   {
     name: 'BQ hotels',
     type: 'Plataforma de reservas',
