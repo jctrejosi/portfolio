@@ -233,7 +233,7 @@ export const ItemsWorkSectionAndromeda = [
 import asec from '@/assets/images/projects/asec.png'
 import bh_hotels from '@/assets/images/projects/bh.png'
 import bq_hotels from '@/assets/images/projects/bq.png'
-import coins from '@/assets/images/projects/coin.png'
+// import coins from '@/assets/images/projects/coin.png'
 import storybook from '@/assets/images/projects/storybook.png'
 import geoportal from '@/assets/images/projects/geoportal.png'
 import ilunion_hotels from '@/assets/images/projects/ilunion.png'
