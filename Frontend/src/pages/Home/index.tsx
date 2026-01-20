@@ -16,6 +16,7 @@ import bgWorlsMap from '@/assets/images/bg_world_map.svg'
 import bgCircuitBoard from '@/assets/images/circuit_board.svg'
 import UnalLogo from '@/assets/logos/UN.svg'
 import {
+  contactItems,
   introductionSocialIcons,
   itemsSkillsAndromeda,
   ItemsWorkAntlia,
@@ -151,6 +152,7 @@ export const Home = () => {
           },
           {
             component: <ContactFormAntlia
+              items={contactItems}
               idForm={import.meta.env.VITE_ID_CONTACT}
               style={{
               '--accent-color': 'var(--base-color-3)',

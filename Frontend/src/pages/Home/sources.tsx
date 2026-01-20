@@ -420,7 +420,7 @@ import {
   FaWhatsapp,
 } from 'react-icons/fa'
 
-export const contactItemsExample = [
+export const contactItems = [
   {
     key: 'phone',
     type: 'phone' as const,
