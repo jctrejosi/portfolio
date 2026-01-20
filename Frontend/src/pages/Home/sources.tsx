@@ -253,7 +253,7 @@ export const projects = [
     name: 'Linear regression',
     type: 'Herramienta de regresión automatizada',
     image: linear_regression,
-    url: 'https://jcti.xyz/lineal_reg',
+    url: 'https://regression.jcti.xyz',
     description:
       'Aplicación web + agente IA, para análisis estadístico que permite cargar archivos y ejecutar una regresión lineal múltiple con interpretación automática de resultados',
   },
@@ -269,7 +269,7 @@ export const projects = [
     name: 'PERT-Solver',
     type: 'Herramienta para planificar tiempos',
     image: pert_solver,
-    url: 'https://jcti.xyz/pert',
+    url: 'https://pert.jcti.xyz',
     description:
       'Aplicación web + agente IA, para análisis estadístico que permite ingresar actividades y ejecutar un análisis para optimizar',
   },
@@ -277,7 +277,7 @@ export const projects = [
     name: 'jcti-coins',
     type: 'Plataforma de pronóstico de monedas',
     image: coins,
-    url: 'https://jcti.xyz/coins',
+    url: 'https://coins.jcti.xyz',
     description:
       'Plataforma web para análisis y predicción de precios de monedas mediante modelos estadísticos',
   },
