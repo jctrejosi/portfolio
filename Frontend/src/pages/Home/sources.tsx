@@ -54,6 +54,24 @@ export const logosHeroSection = [
 ]
 
 /* ------------------------------------
+------------ SOCIAL-LINKS -------------
+--------------------------------------*/
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
+export const socialLinksItems = [
+  {
+    url: 'https://github.com/jctrejosi',
+    icon: <FaGithub />,
+    label: 'GitHub',
+  },
+  {
+    url: 'https://www.linkedin.com/in/juan-carlos-trejos-iglesias-26605b142',
+    icon: <FaLinkedin />,
+    label: 'LinkedIn',
+  },
+]
+
+/* ------------------------------------
 ------------ INTRODUCTION -------------
 --------------------------------------*/
 
