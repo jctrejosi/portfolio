@@ -125,6 +125,7 @@ export const Home = () => {
               '--subtitle-color': 'var(--base-color-6)',
               '--link-color': 'var(--text-color)',
               '--link-color-hover': 'var(--base-color-6)',
+              '--dot-color-active': 'var(--base-color-6)',
             }} />,
             dotLabel: '/Proyectos',
             dotColor: 'var(--base-color-6)',
