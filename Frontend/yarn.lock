@@ -374,10 +374,10 @@
   dependencies:
     "@isaacs/balanced-match" "^4.0.1"
 
-"@jctrejosi/components-seed@1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@jctrejosi/components-seed/-/components-seed-1.0.8.tgz#91abf06925642e2ef4510fd5d82dfda7add67b79"
-  integrity sha512-p5CWVu9CP2ihRTn5reWUN86KV/xNUivZ53WXIvoLXvg3td3VIAo4r6rTPuQH+Vr86f1FQtXdW+OsgAGzId847Q==
+"@jctrejosi/components-seed@1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@jctrejosi/components-seed/-/components-seed-1.0.9.tgz#8d0931c0a5a4a6be41b1c3b173ede85c0469ea88"
+  integrity sha512-qkjV+f1943dFtq8tn2fyGdYtkguf0ldCraW0Q3rrD8t4mlif0Vmg+SBrNnEiaQWArBv97lbZ3f77s5a7dqix6A==
   dependencies:
     react-icons "5.5.0"
 
