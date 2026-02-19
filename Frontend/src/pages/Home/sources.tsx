@@ -423,6 +423,21 @@ export const itemsSkillsAndromeda = [
 ]
 
 /* ------------------------------------
+----------- DOWNLOAD ------------------
+--------------------------------------*/
+
+export const filesDownload = [
+  {
+    url: '/files/cv.pdf',
+    label: 'CV',
+  },
+  {
+    url: '/files/historial_laboral.pdf',
+    label: 'Historial laboral',
+  },
+]
+
+/* ------------------------------------
 ----------- CONTACTO ------------------
 --------------------------------------*/
 import {

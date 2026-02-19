@@ -7,7 +7,8 @@ import {
   SkillsAndromeda,
   WorkSectionAndromeda,
   WorkSectionAntlia,
-  SocialLinksAndromeda
+  SocialLinksAndromeda,
+  FileDownloaderAndromeda
 } from '@jctrejosi/components-seed'
 
 // ---- Assets ----
@@ -17,6 +18,7 @@ import bgCircuitBoard from '@/assets/images/circuit_board.svg'
 import UnalLogo from '@/assets/logos/UN.svg'
 import {
   contactItems,
+  filesDownload,
   introductionSocialIcons,
   itemsSkillsAndromeda,
   ItemsWorkAntlia,
@@ -40,6 +42,14 @@ export const Home = () => {
         style={{
           '--icon-bg': 'var(--dark-100)',
           '--icon-color': 'var(--dark-20)',
+        }}
+      />
+      <FileDownloaderAndromeda
+        files={filesDownload}
+        style={{
+          '--downloader-bg': 'var(--dark-100)',
+          '--downloader-color': 'var(--dark-20)',
+          '--shadow-color': 'var(--dark-100)',
         }}
       />
       <ScrollSnapAndromeda
