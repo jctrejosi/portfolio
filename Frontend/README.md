@@ -1,77 +1,57 @@
-# React + TypeScript + Vite
+# Portafolio — Juan Trejos
 
-This template provides a minimal setup to get React working in Vite with HMR and
-some ESLint rules.
+SPA de portafolio construida con **React + TypeScript + Vite**. La interfaz sigue el
+layout de la referencia incluida en `../index`: cabecera fija (sticky) a la izquierda
+con navegación por secciones y columna de contenido desplazable a la derecha, sobre
+paleta oscura (slate) con acentos teal.
 
-Currently, two official plugins are available:
+## Secciones
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
+Sobre mí · Experticia · Experiencia · Proyectos · Habilidades · Contacto
 
-## Expanding the ESLint configuration
+## Estructura
 
-If you are developing a production application, we recommend updating the
-configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── assets/            # imágenes, logos, proyectos y fuentes (Inter + Nexa)
+├── components/        # Header, Section, Spotlight e iconos
+├── pages/Home/
+│   ├── index.tsx      # composición de la página
+│   ├── sources.tsx    # contenido editable (textos, experiencia, proyectos, contacto)
+│   └── sections/      # una sección por archivo
+└── styles/
+    ├── index.css      # reset, layout y estilos del sitio
+    ├── variables.css  # tokens de color, tipografía y motion
+    └── fonts.css      # @font-face (Inter auto-hospedada + Nexa)
 ```
 
-You can also install
-[eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x)
-and
-[eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom)
-for React-specific lint rules:
+Todo el contenido editable vive en `src/pages/Home/sources.tsx`; los ids de sección
+definidos ahí alimentan a la vez la navegación del header y los encabezados.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Script            | Descripción                                 |
+| ----------------- | ------------------------------------------- |
+| `npm run dev`     | Servidor de desarrollo con HMR              |
+| `npm run build`   | Compila TypeScript y genera `dist/`         |
+| `npm run preview` | Sirve localmente el build de producción     |
+| `npm run format`  | Formatea con Prettier (`.prettierrc` local) |
+| `npm run lint`    | ESLint (requiere crear `eslint.config.js`)  |
+
+> Nota: `npm run lint` no funciona todavía porque falta `eslint.config.js` en la raíz;
+> las dependencias de ESLint ya están instaladas.
+
+## Personalización rápida
+
+- **Colores, fuentes y transiciones:** `src/styles/variables.css`.
+- **Textos, perfil, redes, experiencia, proyectos y habilidades:** `src/pages/Home/sources.tsx`.
+- **CV e historial laboral:** `public/files/` (enlazados desde la sección Experiencia).
+
+## Despliegue
+
+El `Dockerfile` compila la app y la sirve con nginx en el puerto 80:
+
+```sh
+docker build -t portfolio-frontend .
+docker run -p 8080:80 portfolio-frontend
 ```

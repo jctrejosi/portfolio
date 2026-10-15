@@ -5,21 +5,8 @@ import { RouterProvider } from 'react-router-dom'
 
 import '@/styles/index.css'
 
-function applySystemTheme() {
-  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-  document.body.classList.remove('light', 'dark')
-  document.body.classList.add(isDark ? 'dark' : 'light')
-}
-
-applySystemTheme()
-window
-  .matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', applySystemTheme)
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className="root-container">
-      <RouterProvider router={router} />
-    </div>
-  </StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
 )

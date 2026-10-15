@@ -7,17 +7,15 @@
   "eslintConfig": {
     "extends": "./eslint.config.js"
   },
-  "prettier": "@jctrejosi/components-seed/.prettierrc",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext .ts,.tsx --fix",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --config ./node_modules/components-seed/.prettierrc --write .",
+    "format": "prettier --write .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@jctrejosi/components-seed": "1.0.11",
     "glob": "13.0.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
