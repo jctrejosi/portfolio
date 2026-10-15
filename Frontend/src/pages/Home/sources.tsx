@@ -114,7 +114,7 @@ export const about: AboutParagraph[] = [
     variant: 'accent',
   },
   {
-    text: 'Pero más allá de este script ajustado con IA, me gustan las matemáticas, la estadística y sobre todo el arte; me gusta capturar la esencia de las ideas y crear una solución tecnológica que se adapte a tus necesidades y sea útil, si no lo usas no sirve...',
+    text: 'Pero más allá de este script ajustado con IA, me gustan las matemáticas, la estadística y sobre todo el arte; me gusta capturar la esencia de las ideas y crear una solución tecnológica que se adapte a tus necesidades.',
   },
 ]
 
@@ -147,7 +147,7 @@ export const expertise: ExpertiseItem[] = [
   {
     Icon: FaMobileAlt,
     title: 'Desarrollo móvil',
-    subtitle: 'Flutter · ReactNative · Android · iOS',
+    subtitle: 'Android · iOS · Flutter · ReactNative',
     description:
       'Aplicaciones móviles para clientes o uso interno, pensadas para extender y complementar los procesos del negocio.',
   },
