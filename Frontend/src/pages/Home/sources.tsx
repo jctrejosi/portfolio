@@ -43,14 +43,14 @@ export const profile = {
 ------------ SECCIONES ----------------
 -------------------------------------- */
 
-export type Section = { id: string; label: string; hidden?: boolean }
+export type Section = { id: string; label: string; title?: string; hidden?: boolean }
 
 /** Single source of truth for the section ids, labels and page order */
 export const sections = {
   about: { id: 'sobre-mi', label: 'Sobre mí' },
-  expertise: { id: 'experticia', label: 'Experticia' },
+  expertise: { id: 'experticia', label: 'Experticia', title: 'Servicios' },
   experience: { id: 'experiencia', label: 'Experiencia' },
-  projects: { id: 'proyectos', label: 'Proyectos' },
+  projects: { id: 'proyectos', label: 'Proyectos', title: 'Proyectos destacados' },
   // hidden: true oculta la sección (y por tanto su entrada en el menú)
   skills: { id: 'habilidades', label: 'Habilidades', hidden: true },
   contact: { id: 'contacto', label: 'Contacto' },
@@ -122,34 +122,70 @@ export const about: AboutParagraph[] = [
 ----------- EXPERTICIA ----------------
 -------------------------------------- */
 
+export type ServiceDetail = {
+  intro: string
+  includes: string[]
+  outcome: string
+}
+
 export type ExpertiseItem = {
   Icon: IconType
   title: string
-  subtitle: string
   description: string
+  detail: ServiceDetail
 }
 
 export const expertise: ExpertiseItem[] = [
   {
     Icon: FaCode,
-    title: 'Software personalizado',
-    subtitle: 'Java · Python · C++',
+    title: 'Software a la medida',
     description:
-      'Desarrollo de soluciones de software personalizadas, escalables y mantenibles, integradas a los procesos y sistemas de la organización.',
+      'Sistemas hechos para tu operación: automatizamos procesos, integramos tus herramientas y construimos solo lo que tu negocio necesita, sin pagar por funciones que no usas.',
+    detail: {
+      intro:
+        'Analizamos cómo trabaja tu equipo, detectamos los cuellos de botella y construimos el sistema que resuelve el problema real. Una solución propia, que se adapta a tus procesos y crece contigo.',
+      includes: [
+        'Análisis de procesos y definición del alcance',
+        'Desarrollo e integración con tus sistemas actuales',
+        'Automatización de tareas repetitivas',
+        'Documentación, capacitación y soporte',
+      ],
+      outcome: 'Menos trabajo manual, menos errores y una operación más rápida y ordenada.',
+    },
   },
   {
     Icon: FaGlobe,
-    title: 'Desarrollo web',
-    subtitle: 'React · Angular · Vue',
+    title: 'Aplicaciones web',
     description:
-      'Diseño y desarrollo de aplicaciones web modernas, enfocadas en usabilidad, rendimiento y escalabilidad, adaptadas a las necesidades del negocio.',
+      'Sitios y plataformas web rápidas, seguras y fáciles de administrar: desde tu página corporativa hasta portales con pagos, reservas o paneles de administración.',
+    detail: {
+      intro:
+        'Diseñamos y desarrollamos sitios y aplicaciones web pensadas para convertir visitantes en clientes, con una experiencia clara y una administración sencilla para tu equipo.',
+      includes: [
+        'Diseño a la medida y experiencia de usuario',
+        'Reservas, pagos en línea y formularios',
+        'Paneles de administración de contenido',
+        'Optimización de velocidad y posicionamiento (SEO)',
+      ],
+      outcome: 'Una presencia digital profesional que atrae clientes y simplifica tu día a día.',
+    },
   },
   {
     Icon: FaMobileAlt,
-    title: 'Desarrollo móvil',
-    subtitle: 'Android · iOS · Flutter · ReactNative',
+    title: 'Aplicaciones móviles',
     description:
-      'Aplicaciones móviles para clientes o uso interno, pensadas para extender y complementar los procesos del negocio.',
+      'Apps para Android e iOS que acercan tu negocio a clientes y equipo: pedidos, reservas, entregas o herramientas internas, siempre a la mano.',
+    detail: {
+      intro:
+        'Llevamos tu operación al bolsillo de tus clientes y de tu equipo con aplicaciones móviles estables, fáciles de usar y listas para crecer.',
+      includes: [
+        'Apps para clientes y para uso interno',
+        'Notificaciones, pagos y seguimiento en tiempo real',
+        'Publicación en Play Store y App Store',
+        'Mantenimiento y nuevas versiones',
+      ],
+      outcome: 'Más cercanía con tus clientes y un equipo que trabaja desde cualquier lugar.',
+    },
   },
 ]
 
