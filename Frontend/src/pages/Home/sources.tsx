@@ -17,7 +17,7 @@ import {
 import { FaXTwitter } from 'react-icons/fa6'
 
 import logoAranda from '@/assets/images/logo-aranda.webp'
-import logoGaia from '@/assets/images/logo-gaia.png'
+import logoUnal from '@/assets/logo_unal.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
 import asec from '@/assets/images/projects/asec.png'
 import bq_hotels from '@/assets/images/projects/bq.png'
@@ -60,7 +60,7 @@ export const sections = {
  * Secciones que aparecen en el menú del header, en este orden.
  * "Experticia" queda fuera a propósito: visualmente va dentro del bloque de "Sobre mí".
  */
-const navSectionKeys = ['about', 'experience', 'projects', 'contact'] as const
+const navSectionKeys = ['about', 'projects', 'experience', 'contact'] as const
 
 export const navItems: Section[] = navSectionKeys.map((key) => sections[key])
 
@@ -169,10 +169,10 @@ export type ExperienceItem = {
 export const experience: ExperienceItem[] = [
   {
     name: 'GAIA',
-    logo: logoGaia,
-    role: 'Desarrollador / Investigador',
+    logo: logoUnal,
+    role: 'Investigador / Desarrollador',
     description:
-      'Desarrollo web desde cero, diseño de software, configuración de servidores y mantenimiento de aplicaciones modernas usando metodologías ágiles y buenas prácticas.',
+      'Investigador y desarrollador en el grupo de investigación GAIA de la Universidad Nacional de Colombia, sede Manizales: desarrollo web desde cero, diseño de software, configuración de servidores y mantenimiento de aplicaciones modernas, con metodologías ágiles y análisis de datos.',
     technologies: ['php', 'laravel', 'vue', 'react', 'docker', 'linux', 'sql', 'análisis de datos'],
     url: 'https://gaia.manizales.unal.edu.co/grupo_inv/grupo-de-investigacion-en-ambientes-inteligentes-adaptativos-gaia',
   },
@@ -181,7 +181,7 @@ export const experience: ExperienceItem[] = [
     logo: logoAranda,
     role: 'Frontend developer',
     description:
-      'Fortalecí mi conocimiento en arquitectura de software y devops, desarrollando frontend en React, creando componentes reutilizables y trabajando bajo Scrum con despliegues en Azure.',
+      'Desarrollo frontend en React con componentes reutilizables bajo Scrum y despliegues en Azure, fortaleciendo arquitectura de software y DevOps. También adquirí experiencia en el control de sistemas mediante scripts para la revisión de vulnerabilidades en dispositivos, reforzando mis conocimientos en ciberseguridad, junto con habilidades en desarrollo y maquetación web y en la construcción de motores de reservas.',
     technologies: ['react', 'devops', 'azure', 'typescript', 'styled-components', 'git'],
     url: 'https://arandasoft.com/en/',
   },
@@ -190,7 +190,7 @@ export const experience: ExperienceItem[] = [
     logo: logoRoiback,
     role: 'Frontend developer',
     description:
-      'Desarrollo frontend para sitios corporativos, creación de componentes reutilizables, mantenimiento, atención de bugs y adaptación continua a requerimientos y retroalimentación del cliente.',
+      'Desarrollo frontend de webs de reservas para hoteles: personalización de páginas de habitaciones, salones, eventos y restaurantes dentro del hotel, gestión de SEO para este tipo de sitios, mantenimiento y adaptación continua a los requerimientos del cliente.',
     technologies: [
       'vue',
       'python',
@@ -210,10 +210,7 @@ export const experience: ExperienceItem[] = [
 ---------- DESCARGAS ------------------
 -------------------------------------- */
 
-export const downloads = [
-  { label: 'Ver CV completo', url: '/files/cv.pdf' },
-  { label: 'Ver historial laboral', url: '/files/historial_laboral.pdf' },
-]
+export const downloads = [{ label: 'Ver CV completo', url: '/files/cv.pdf' }]
 
 /* ------------------------------------
 ------- PROYECTOS DESTACADOS ----------
@@ -229,6 +226,54 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: 'Aranda Security Compliance (ASEC)',
+    type: 'Plataforma b2b',
+    image: asec,
+    url: 'https://arandasoft.com/productos/aranda-security-compliance/',
+    description:
+      'Plataforma empresarial para gestión de cumplimiento en seguridad de la información, auditorías, riesgos y controles en los dispositivos de TI.',
+  },
+  {
+    name: 'Clothing ecommerce',
+    type: 'Comercio electrónico',
+    image: clothing,
+    url: 'https://clothing.jcti.xyz',
+    description:
+      'Tienda de moda en línea con catálogo, ofertas y novedades, carrito y compra segura, sobre el mismo backend del ecommerce.',
+  },
+  {
+    name: 'Daisy bots',
+    type: 'Bots de WhatsApp',
+    image: daisy_bots,
+    url: 'https://bot-platform.jcti.xyz',
+    description:
+      'Plataforma para operar bots de WhatsApp: panel web, API y webhooks para automatizar conversaciones y atención.',
+  },
+  {
+    name: 'Dra. Camila Cardona',
+    type: 'Reservas para consultorio',
+    image: dracardona,
+    url: 'https://dracardona.co',
+    description:
+      'Sitio de reservas para consultorio odontológico, con agenda de citas para pacientes y panel de administración para el equipo.',
+  },
+  {
+    name: 'Restaurantes',
+    type: 'Reservas y operación',
+    image: punto_c,
+    url: 'https://restaurante.jcti.xyz',
+    description:
+      'Sitio y sistema para restaurante: carta, reservas de mesa, pedidos y paneles de cocina, meseros y administración en tiempo real.',
+  },
+  {
+    name: 'CRM',
+    type: 'Analítica y campañas',
+    image: crm,
+    url: 'https://crm.jcti.xyz',
+    description:
+      'Panel para gestionar clientes, analítica y campañas, con IA que redacta y explica campañas y modelos de clustering, propensión y uplift.',
+  },
+  {
     name: 'Geoportal SIMAC',
     type: 'Monitoreo ambiental',
     image: geoportal,
@@ -243,54 +288,6 @@ export const projects: Project[] = [
     url: 'https://sismico.jcti.xyz',
     description:
       'Mapa colaborativo para reportar daños y coordinar ayuda tras un sismo, con reportes por app, SMS y voz, deduplicación con IA y bot de asistencia.',
-  },
-  {
-    name: 'Clothing ecommerce',
-    type: 'Comercio electrónico',
-    image: clothing,
-    url: 'https://clothing.jcti.xyz',
-    description:
-      'Tienda de moda en línea con catálogo, ofertas y novedades, carrito y compra segura, sobre el mismo backend del ecommerce.',
-  },
-  {
-    name: 'Restaurantes',
-    type: 'Reservas y operación',
-    image: punto_c,
-    url: 'https://restaurante.jcti.xyz',
-    description:
-      'Sitio y sistema para restaurante: carta, reservas de mesa, pedidos y paneles de cocina, meseros y administración en tiempo real.',
-  },
-  {
-    name: 'Dra. Camila Cardona',
-    type: 'Reservas para consultorio',
-    image: dracardona,
-    url: 'https://dracardona.co',
-    description:
-      'Sitio de reservas para consultorio odontológico, con agenda de citas para pacientes y panel de administración para el equipo.',
-  },
-  {
-    name: 'CRM',
-    type: 'Analítica y campañas',
-    image: crm,
-    url: 'https://crm.jcti.xyz',
-    description:
-      'Panel para gestionar clientes, analítica y campañas, con IA que redacta y explica campañas y modelos de clustering, propensión y uplift.',
-  },
-  {
-    name: 'Daisy bots',
-    type: 'Bots de WhatsApp',
-    image: daisy_bots,
-    url: 'https://bot-platform.jcti.xyz',
-    description:
-      'Plataforma para operar bots de WhatsApp: panel web, API y webhooks para automatizar conversaciones y atención.',
-  },
-  {
-    name: 'Aranda Security Compliance (ASEC)',
-    type: 'Plataforma b2b',
-    image: asec,
-    url: 'https://arandasoft.com/productos/aranda-security-compliance/',
-    description:
-      'Plataforma empresarial para gestión de cumplimiento en seguridad de la información, auditorías, riesgos y controles en los dispositivos de TI.',
   },
   {
     name: 'BQ hotels',

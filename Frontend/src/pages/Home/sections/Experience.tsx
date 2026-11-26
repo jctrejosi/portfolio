@@ -5,7 +5,7 @@ import { downloads, experience, sections } from '@/pages/Home/sources'
 export const Experience = () => (
   <Section {...sections.experience}>
     <ul className="list">
-      {experience.map(({ name, logo, role, description, technologies, url }) => (
+      {experience.map(({ name, logo, role, description, url }) => (
         <li className="list-item" key={name}>
           <div className="item-backdrop" aria-hidden="true" />
           <img
@@ -25,13 +25,6 @@ export const Experience = () => (
               </a>
             </h3>
             <p className="item-text">{description}</p>
-            <ul className="pill-list" aria-label="Tecnologías usadas">
-              {technologies.map((technology) => (
-                <li key={technology}>
-                  <span className="pill">{technology}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </li>
       ))}

@@ -21,8 +21,8 @@ export const Home = () => (
         <main id="contenido" className="main">
           <About />
           <Expertise />
-          <Experience />
           <Projects />
+          <Experience />
           {sections.skills.hidden ? null : <Skills />}
           <Contact />
         </main>
