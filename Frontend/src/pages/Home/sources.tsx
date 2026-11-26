@@ -172,7 +172,7 @@ export const experience: ExperienceItem[] = [
     logo: logoUnal,
     role: 'Investigador / Desarrollador',
     description:
-      'Investigador y desarrollador en el grupo de investigación GAIA de la Universidad Nacional de Colombia, sede Manizales: desarrollo web desde cero, diseño de software, configuración de servidores y mantenimiento de aplicaciones modernas, con metodologías ágiles y análisis de datos.',
+      'Investigador y desarrollador en el grupo de investigación GAIA de la Universidad Nacional de Colombia, sede Manizales: desarrollo web desde cero, diseño de software, configuración de servidores y mantenimiento de aplicaciones modernas, en un grupo que construye sistemas inteligentes especializados en IA y automatización, análisis de datos, ciberseguridad y sistemas embebidos con electrónica e internet de las cosas (IoT).',
     technologies: ['php', 'laravel', 'vue', 'react', 'docker', 'linux', 'sql', 'análisis de datos'],
     url: 'https://gaia.manizales.unal.edu.co/grupo_inv/grupo-de-investigacion-en-ambientes-inteligentes-adaptativos-gaia',
   },
@@ -181,7 +181,7 @@ export const experience: ExperienceItem[] = [
     logo: logoAranda,
     role: 'Frontend developer',
     description:
-      'Desarrollo frontend en React con componentes reutilizables bajo Scrum y despliegues en Azure, fortaleciendo arquitectura de software y DevOps. También adquirí experiencia en el control de sistemas mediante scripts para la revisión de vulnerabilidades en dispositivos, reforzando mis conocimientos en ciberseguridad, junto con habilidades en desarrollo y maquetación web y en la construcción de motores de reservas.',
+      'Desarrollo frontend en React con componentes reutilizables bajo Scrum y despliegues en Azure, fortaleciendo arquitectura de software y DevOps. También adquirí experiencia en el control de sistemas mediante scripts para la revisión de vulnerabilidades en dispositivos, reforzando mis conocimientos en ciberseguridad, junto con habilidades en desarrollo y maquetación web.',
     technologies: ['react', 'devops', 'azure', 'typescript', 'styled-components', 'git'],
     url: 'https://arandasoft.com/en/',
   },
@@ -190,7 +190,7 @@ export const experience: ExperienceItem[] = [
     logo: logoRoiback,
     role: 'Frontend developer',
     description:
-      'Desarrollo frontend de webs de reservas para hoteles: personalización de páginas de habitaciones, salones, eventos y restaurantes dentro del hotel, gestión de SEO para este tipo de sitios, mantenimiento y adaptación continua a los requerimientos del cliente.',
+      'Desarrollo frontend de webs de reservas para hoteles y sus motores de reservas: personalización de páginas de habitaciones, salones, eventos y restaurantes dentro del hotel, gestión de SEO para este tipo de sitios, mantenimiento y adaptación continua a los requerimientos del cliente.',
     technologies: [
       'vue',
       'python',
@@ -231,7 +231,7 @@ export const projects: Project[] = [
     image: asec,
     url: 'https://arandasoft.com/productos/aranda-security-compliance/',
     description:
-      'Plataforma empresarial para gestión de cumplimiento en seguridad de la información, auditorías, riesgos y controles en los dispositivos de TI.',
+      'Plataforma B2B para gestionar el cumplimiento en seguridad de la información: auditorías, riesgos, controles y dispositivos de TI, con el fin de demostrar y mantener el cumplimiento normativo.',
   },
   {
     name: 'Clothing ecommerce',
@@ -239,7 +239,7 @@ export const projects: Project[] = [
     image: clothing,
     url: 'https://clothing.jcti.xyz',
     description:
-      'Tienda de moda en línea con catálogo, ofertas y novedades, carrito y compra segura, sobre el mismo backend del ecommerce.',
+      'Ecommerce de moda con catálogo, ofertas y novedades, carrito y compra segura, apoyado en el mismo backend de inventario, pedidos y pagos del ecommerce principal.',
   },
   {
     name: 'Daisy bots',
@@ -247,7 +247,7 @@ export const projects: Project[] = [
     image: daisy_bots,
     url: 'https://bot-platform.jcti.xyz',
     description:
-      'Plataforma para operar bots de WhatsApp: panel web, API y webhooks para automatizar conversaciones y atención.',
+      'Plataforma para crear y operar bots de WhatsApp: panel web, API y webhooks para automatizar conversaciones, atención al cliente y flujos de mensajería.',
   },
   {
     name: 'Dra. Camila Cardona',
@@ -255,7 +255,7 @@ export const projects: Project[] = [
     image: dracardona,
     url: 'https://dracardona.co',
     description:
-      'Sitio de reservas para consultorio odontológico, con agenda de citas para pacientes y panel de administración para el equipo.',
+      'Sitio de reservas para consultorio odontológico: agenda de citas para pacientes, selección de servicios y panel de administración para el equipo del consultorio.',
   },
   {
     name: 'Restaurantes',
@@ -263,7 +263,7 @@ export const projects: Project[] = [
     image: punto_c,
     url: 'https://restaurante.jcti.xyz',
     description:
-      'Sitio y sistema para restaurante: carta, reservas de mesa, pedidos y paneles de cocina, meseros y administración en tiempo real.',
+      'Sistema para restaurantes: carta digital, reservas de mesa y pedidos, con paneles de cocina, meseros y administración sincronizados en tiempo real.',
   },
   {
     name: 'CRM',
@@ -271,7 +271,7 @@ export const projects: Project[] = [
     image: crm,
     url: 'https://crm.jcti.xyz',
     description:
-      'Panel para gestionar clientes, analítica y campañas, con IA que redacta y explica campañas y modelos de clustering, propensión y uplift.',
+      'CRM con panel de clientes, analítica y campañas; la IA redacta y explica las campañas y alimenta modelos de clustering, propensión y uplift.',
   },
   {
     name: 'Geoportal SIMAC',
@@ -279,7 +279,7 @@ export const projects: Project[] = [
     image: geoportal,
     url: 'https://geoportal.jcti.xyz',
     description:
-      'Mapa interactivo para visualizar en tiempo real estaciones hidrometeorológicas, comunitarias y de calidad del aire de Caldas, Colombia.',
+      'Geoportal para consultar en tiempo real estaciones hidrometeorológicas, comunitarias y de calidad del aire de Caldas, con mapa interactivo, fichas técnicas y variables por estación.',
   },
   {
     name: 'Monitor sísmico',
@@ -287,7 +287,7 @@ export const projects: Project[] = [
     image: sismico,
     url: 'https://sismico.jcti.xyz',
     description:
-      'Mapa colaborativo para reportar daños y coordinar ayuda tras un sismo, con reportes por app, SMS y voz, deduplicación con IA y bot de asistencia.',
+      'Plataforma de respuesta a sismos: mapa colaborativo de reportes de daños, necesidades y ofrecimientos, con envío por app, SMS y voz, deduplicación con IA y nodos ESP32 que operan sin conexión.',
   },
   {
     name: 'BQ hotels',
@@ -295,7 +295,7 @@ export const projects: Project[] = [
     image: bq_hotels,
     url: 'https://www.bqhoteles.com/es/',
     description:
-      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...).',
+      'Web de reservas para hotel con landings por sección (habitaciones, ofertas y servicios) y un flujo de reserva integrado para consultar disponibilidad y tarifas.',
   },
 ]
 
