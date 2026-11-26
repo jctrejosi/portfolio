@@ -19,15 +19,18 @@ import { FaXTwitter } from 'react-icons/fa6'
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
-import asec from '@/assets/images/projects/asec.png'
-import bh_hotels from '@/assets/images/projects/bh.png'
-import bq_hotels from '@/assets/images/projects/bq.png'
+import contabdsi from '@/assets/images/projects/contabdsi.png'
+import crm from '@/assets/images/projects/crm.png'
+import daisy_bots from '@/assets/images/projects/daisy-bots.png'
+import dracardona from '@/assets/images/projects/dracardona.png'
+import ecommerce from '@/assets/images/projects/ecommerce.png'
 import geoportal from '@/assets/images/projects/geoportal.png'
-import ilunion_hotels from '@/assets/images/projects/ilunion.png'
-import linear_regression from '@/assets/images/projects/regression.png'
-import pert_solver from '@/assets/images/projects/pert.png'
-import storybook from '@/assets/images/projects/storybook.png'
-import tafer_hotels from '@/assets/images/projects/tafer.png'
+import ori from '@/assets/images/projects/ori.png'
+import paimon from '@/assets/images/projects/paimon.png'
+import proddsi from '@/assets/images/projects/proddsi.png'
+import punto_c from '@/assets/images/projects/punto-c.png'
+import sismico from '@/assets/images/projects/sismico.png'
+import terraiaco from '@/assets/images/projects/terraiaco.png'
 
 /* ------------------------------------
 -------------- PERFIL -----------------
@@ -229,75 +232,100 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: 'Aranda Security Compliance (ASEC)',
-    type: 'Plataforma b2b',
-    image: asec,
-    url: 'https://arandasoft.com/productos/aranda-security-compliance/',
-    description:
-      'Plataforma empresarial para gestión de cumplimiento en seguridad de la información, auditorías, riesgos y controles en los dispositivos de TI',
-  },
-  {
-    name: 'Linear regression',
-    type: 'Herramienta de regresión automatizada',
-    image: linear_regression,
-    url: 'https://regression.jcti.xyz',
-    description:
-      'Aplicación web + agente IA, para análisis estadístico que permite cargar archivos y ejecutar una regresión lineal múltiple con interpretación automática de resultados',
-  },
-  {
     name: 'Geoportal SIMAC',
-    type: 'Plataforma de monitoreo ambiental',
+    type: 'Monitoreo ambiental',
     image: geoportal,
-    url: 'https://cdiac.manizales.unal.edu.co/geoportal-simac/',
+    url: 'https://geoportal.jcti.xyz',
     description:
-      'Mapa interactivo para visualización y consulta de datos climatológicos en tiempo real desde estaciones meteorológicas ubicadas en Caldas, Colombia',
+      'Mapa interactivo para visualizar en tiempo real estaciones hidrometeorológicas, comunitarias y de calidad del aire de Caldas, Colombia.',
   },
   {
-    name: 'PERT-Solver',
-    type: 'Herramienta para planificar tiempos',
-    image: pert_solver,
-    url: 'https://pert.jcti.xyz',
+    name: 'Monitor sísmico',
+    type: 'Respuesta a emergencias',
+    image: sismico,
+    url: 'https://sismico.jcti.xyz',
     description:
-      'Aplicación web + agente IA, para análisis estadístico que permite ingresar actividades y ejecutar un análisis para optimizar',
+      'Mapa colaborativo para reportar daños y coordinar ayuda tras un sismo, con reportes por app, SMS y voz, deduplicación con IA y bot de asistencia.',
   },
   {
-    name: 'components-seed',
-    type: 'Mi librería de componentes',
-    image: storybook,
-    url: 'https://components.jcti.xyz',
-    description: 'Aquí muestro el storybook de mi librería de componentes',
+    name: 'Mercaldas · Ecommerce',
+    type: 'Comercio electrónico',
+    image: ecommerce,
+    url: 'https://ecommerce.jcti.xyz',
+    description:
+      'Tienda en línea con catálogo, cotizador, pedidos y entrega, más apps de picking y delivery y un bot de compras con IA.',
   },
   {
-    name: 'BQ hotels',
-    type: 'Plataforma de reservas',
-    image: bq_hotels,
-    url: 'https://www.bqhoteles.com/es/',
+    name: 'Punto C',
+    type: 'Restaurante: reservas y operación',
+    image: punto_c,
+    url: 'https://restaurante.jcti.xyz',
     description:
-      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+      'Sitio y sistema para restaurante: carta, reservas de mesa, pedidos y paneles de cocina, meseros y administración en tiempo real.',
   },
   {
-    name: 'Ilunion hotels',
-    type: 'Plataforma de reservas',
-    image: ilunion_hotels,
-    url: 'https://www.ilunionhotels.com/',
+    name: 'Dra. Camila Cardona',
+    type: 'Reservas para consultorio',
+    image: dracardona,
+    url: 'https://dracardona.co',
     description:
-      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+      'Sitio de reservas para consultorio odontológico, con agenda de citas para pacientes y panel de administración para el equipo.',
   },
   {
-    name: 'Tafer hotels',
-    type: 'Plataforma de reservas',
-    image: tafer_hotels,
-    url: 'https://www.taferresorts.com.mx/',
+    name: 'ORI · Movilidad internacional',
+    type: 'Gestión universitaria',
+    image: ori,
+    url: 'https://ori.jcti.xyz',
     description:
-      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+      'Aplicación para la Oficina de Relaciones Internacionales de la UNAL: convocatorias, movilidad entrante y saliente, documentos, roles y auditoría.',
   },
   {
-    name: 'BH hotels',
-    type: 'Plataforma de reservas',
-    image: bh_hotels,
-    url: 'https://www.bhhoteles.com/',
+    name: 'CRM Mercaldas',
+    type: 'Analítica y campañas',
+    image: crm,
+    url: 'https://crm.jcti.xyz',
     description:
-      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...)',
+      'Panel para gestionar clientes, analítica y campañas, con IA que redacta y explica campañas y modelos de clustering, propensión y uplift.',
+  },
+  {
+    name: 'PRODDSI',
+    type: 'Producción y abastecimiento',
+    image: proddsi,
+    url: 'https://production.jcti.xyz',
+    description:
+      'Panel de producción con compras, inventario, MRP, calidad, mantenimiento, trazabilidad e indicadores OEE para la planta.',
+  },
+  {
+    name: 'CONTABDSI',
+    type: 'Modernización contable',
+    image: contabdsi,
+    url: 'https://finances.jcti.xyz',
+    description:
+      'Interfaz web de contabilidad general: plan de cuentas, terceros y compañías, con asistente contable de IA y migración gradual del sistema heredado.',
+  },
+  {
+    name: 'TerraiaCo',
+    type: 'Asistente IA para tierras',
+    image: terraiaco,
+    url: 'https://terraexpert.jcti.xyz',
+    description:
+      'Asistente conversacional que ayuda a evaluar terrenos: valoración de precio, riesgos, revisión legal de documentos e inspección de campo.',
+  },
+  {
+    name: 'Paimon',
+    type: 'APIs de IA multimodal',
+    image: paimon,
+    url: 'https://paimon.jcti.xyz',
+    description:
+      'Servicios de IA para transcripción de audio, generación y edición de imágenes, eliminación de fondo, texto a voz y búsqueda semántica (RAG).',
+  },
+  {
+    name: 'Daisy bots',
+    type: 'Bots de WhatsApp',
+    image: daisy_bots,
+    url: 'https://bot-platform.jcti.xyz',
+    description:
+      'Plataforma para operar bots de WhatsApp: panel web, API y webhooks para automatizar conversaciones y atención.',
   },
 ]
 

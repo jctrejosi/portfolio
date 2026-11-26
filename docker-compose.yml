@@ -4,6 +4,16 @@ services:
     build:
       context: ./Frontend
       dockerfile: Dockerfile
+    # No publica 80/443: el edge Caddy compartido lo alcanza por la red
+    # `shared_edge`. El puerto en loopback es solo para depurar en el host.
     ports:
-      - "5174:80"  # host 5174 → contenedor 80
+      - "127.0.0.1:5174:80"
+    networks:
+      - shared_edge
     restart: unless-stopped
+
+networks:
+  # Red externa que crean los proyectos del servidor y usa `edge_caddy`.
+  shared_edge:
+    external: true
+    name: shared_edge
