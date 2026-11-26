@@ -19,18 +19,15 @@ import { FaXTwitter } from 'react-icons/fa6'
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
-import contabdsi from '@/assets/images/projects/contabdsi.png'
+import asec from '@/assets/images/projects/asec.png'
+import bq_hotels from '@/assets/images/projects/bq.png'
+import clothing from '@/assets/images/projects/clothing.png'
 import crm from '@/assets/images/projects/crm.png'
 import daisy_bots from '@/assets/images/projects/daisy-bots.png'
 import dracardona from '@/assets/images/projects/dracardona.png'
-import ecommerce from '@/assets/images/projects/ecommerce.png'
 import geoportal from '@/assets/images/projects/geoportal.png'
-import ori from '@/assets/images/projects/ori.png'
-import paimon from '@/assets/images/projects/paimon.png'
-import proddsi from '@/assets/images/projects/proddsi.png'
 import punto_c from '@/assets/images/projects/punto-c.png'
 import sismico from '@/assets/images/projects/sismico.png'
-import terraiaco from '@/assets/images/projects/terraiaco.png'
 
 /* ------------------------------------
 -------------- PERFIL -----------------
@@ -248,16 +245,16 @@ export const projects: Project[] = [
       'Mapa colaborativo para reportar daños y coordinar ayuda tras un sismo, con reportes por app, SMS y voz, deduplicación con IA y bot de asistencia.',
   },
   {
-    name: 'Mercaldas · Ecommerce',
+    name: 'Clothing ecommerce',
     type: 'Comercio electrónico',
-    image: ecommerce,
-    url: 'https://ecommerce.jcti.xyz',
+    image: clothing,
+    url: 'https://clothing.jcti.xyz',
     description:
-      'Tienda en línea con catálogo, cotizador, pedidos y entrega, más apps de picking y delivery y un bot de compras con IA.',
+      'Tienda de moda en línea con catálogo, ofertas y novedades, carrito y compra segura, sobre el mismo backend del ecommerce.',
   },
   {
-    name: 'Punto C',
-    type: 'Restaurante: reservas y operación',
+    name: 'Restaurantes',
+    type: 'Reservas y operación',
     image: punto_c,
     url: 'https://restaurante.jcti.xyz',
     description:
@@ -272,52 +269,12 @@ export const projects: Project[] = [
       'Sitio de reservas para consultorio odontológico, con agenda de citas para pacientes y panel de administración para el equipo.',
   },
   {
-    name: 'ORI · Movilidad internacional',
-    type: 'Gestión universitaria',
-    image: ori,
-    url: 'https://ori.jcti.xyz',
-    description:
-      'Aplicación para la Oficina de Relaciones Internacionales de la UNAL: convocatorias, movilidad entrante y saliente, documentos, roles y auditoría.',
-  },
-  {
-    name: 'CRM Mercaldas',
+    name: 'CRM',
     type: 'Analítica y campañas',
     image: crm,
     url: 'https://crm.jcti.xyz',
     description:
       'Panel para gestionar clientes, analítica y campañas, con IA que redacta y explica campañas y modelos de clustering, propensión y uplift.',
-  },
-  {
-    name: 'PRODDSI',
-    type: 'Producción y abastecimiento',
-    image: proddsi,
-    url: 'https://production.jcti.xyz',
-    description:
-      'Panel de producción con compras, inventario, MRP, calidad, mantenimiento, trazabilidad e indicadores OEE para la planta.',
-  },
-  {
-    name: 'CONTABDSI',
-    type: 'Modernización contable',
-    image: contabdsi,
-    url: 'https://finances.jcti.xyz',
-    description:
-      'Interfaz web de contabilidad general: plan de cuentas, terceros y compañías, con asistente contable de IA y migración gradual del sistema heredado.',
-  },
-  {
-    name: 'TerraiaCo',
-    type: 'Asistente IA para tierras',
-    image: terraiaco,
-    url: 'https://terraexpert.jcti.xyz',
-    description:
-      'Asistente conversacional que ayuda a evaluar terrenos: valoración de precio, riesgos, revisión legal de documentos e inspección de campo.',
-  },
-  {
-    name: 'Paimon',
-    type: 'APIs de IA multimodal',
-    image: paimon,
-    url: 'https://paimon.jcti.xyz',
-    description:
-      'Servicios de IA para transcripción de audio, generación y edición de imágenes, eliminación de fondo, texto a voz y búsqueda semántica (RAG).',
   },
   {
     name: 'Daisy bots',
@@ -326,6 +283,22 @@ export const projects: Project[] = [
     url: 'https://bot-platform.jcti.xyz',
     description:
       'Plataforma para operar bots de WhatsApp: panel web, API y webhooks para automatizar conversaciones y atención.',
+  },
+  {
+    name: 'Aranda Security Compliance (ASEC)',
+    type: 'Plataforma b2b',
+    image: asec,
+    url: 'https://arandasoft.com/productos/aranda-security-compliance/',
+    description:
+      'Plataforma empresarial para gestión de cumplimiento en seguridad de la información, auditorías, riesgos y controles en los dispositivos de TI.',
+  },
+  {
+    name: 'BQ hotels',
+    type: 'Plataforma de reservas',
+    image: bq_hotels,
+    url: 'https://www.bqhoteles.com/es/',
+    description:
+      'Sistema web de reservas hoteleras, con landings para cada sección del hotel (habitaciones, ofertas, servicios, etc...).',
   },
 ]
 
